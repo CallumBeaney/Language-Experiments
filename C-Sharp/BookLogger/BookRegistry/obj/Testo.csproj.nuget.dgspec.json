@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/beaneyc/Developer/Visual Studio/Testo/Testo/Testo.csproj": {}
+  },
+  "projects": {
+    "/Users/beaneyc/Developer/Visual Studio/Testo/Testo/Testo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/beaneyc/Developer/Visual Studio/Testo/Testo/Testo.csproj",
+        "projectName": "Testo",
+        "projectPath": "/Users/beaneyc/Developer/Visual Studio/Testo/Testo/Testo.csproj",
+        "packagesPath": "/Users/beaneyc/.nuget/packages/",
+        "outputPath": "/Users/beaneyc/Developer/Visual Studio/Testo/Testo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/beaneyc/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+using System;
+
+namespace Testo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What's your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("What's your age?");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine(Math.Round(8.7 * (66+7)));
+            Console.WriteLine(Math.Min(4, 75));
+
+
+            Console.WriteLine($"Hello " + name + " aged " + age + "! The date is: \n");
+            Console.WriteLine(DateTime.Now.ToString("\t yyyy.MM.dd"));
+
+            name = "john";
+            Console.WriteLine($"New name\t\t\"{name}\"");
+
+            Console.WriteLine(name.Length);
+            Console.WriteLine(name[3]);
+
+            string lemon = "longest nine cats";
+
+            Console.WriteLine(lemon.IndexOf("nine"));
+
+            Console.WriteLine(lemon.Substring(13, 4));
+
+
+        }
+    }
+}
+
+
+OUTPUT:
+
+What's your name?
+Timothy Barker Lemons
+What's your age?
+493
+635
+4
+Hello Timothy Barker Lemons aged 493! The date is: 
+
+         2022.04.04
+New name                "john"
+4
+n
+8
+cats
+
+
+__________
+
+using System;
+
+namespace Testo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Name is: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello " + name);
+        }
+    }
+}
+
+__________
+
+
+using System;
+
+namespace Testo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] numberGrid =
+            {
+                {00, 01 },
+                {10, 11 },
+                {20, 21 }
+            };
+
+            //aruiha
+            int[,] myArray = new int[2, 3];
+            //2 rows 3 columns
+
+            try
+            {
+                Console.Write("Give me a number: ");
+                int j = Convert.ToInt32(Console.ReadLine());
+            }
+            catch(FormatException e)
+            {
+                Console.WriteLine("Error!");
+                Console.WriteLine(e.Message);
+            }
+            catch(DivideByZeroException p)
+            {
+                Console.WriteLine(p.Message);
+                //Here nothing would trigger p of course
+            }
+
+        }
+    }
+}
+__________

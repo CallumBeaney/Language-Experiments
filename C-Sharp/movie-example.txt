@@ -1,0 +1,72 @@
+using System;
+
+namespace Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Movie tron = new Movie("Tron", "Some Guy", "12A");
+            Movie lemonstory = new Movie("Lemon Story", "Somebody's Son", "18");
+            Movie batman = new Movie("Batman", "Idek Bro", "15");
+
+
+
+            Console.WriteLine(tron.Rating);
+            Console.WriteLine(batman.Rating);
+            Console.WriteLine(Movie.movieCount);
+
+            Console.WriteLine(lemonstory.getMovieCount());
+
+        }
+    }
+}
+
+
+______________
+
+
+
+using System;
+namespace Test
+{
+    public class Movie
+    {
+
+        public string title;
+        public string director;
+        private string rating;
+        public static int movieCount = 0;
+
+        public Movie(string aTitle, string aDirector, string aRating)
+        {
+            title = aTitle;
+            director = aDirector;
+            Rating = aRating;
+            movieCount++;
+        }
+
+        public string Rating
+        {
+            get { return rating; }
+            set
+            {
+                if (value == "12A" || value == "PG")
+                {
+                    rating = value;
+                }
+                else
+                {
+                    rating = "No Rating";
+                }
+            }
+        }
+
+        public int getMovieCount()
+        {
+            return movieCount;
+        }
+
+    }
+}
+
